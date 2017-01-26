@@ -1,0 +1,10 @@
+
+li {
+    padding: 0 50px
+}
+.toDo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 0
+}
