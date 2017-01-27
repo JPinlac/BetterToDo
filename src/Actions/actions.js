@@ -13,7 +13,7 @@ export const removeToDo = (id) => ({
 })
 
 export const editToDo = (id, text) => ({
-    type: "REMOVE_TODO",
+    type: "EDIT_TODO",
     id,
     text
 })

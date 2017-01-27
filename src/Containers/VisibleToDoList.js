@@ -42,7 +42,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(removeToDo(id))
         },
         onEditClick: (id, text) => {
-            dispatch(editToDo(id))
+            dispatch(editToDo(id, text))
         }
     }
 };
