@@ -9,8 +9,8 @@ const ToDoList = ({ toDos, onToDoClick, onRemoveClick, onEditClick }) => (
                   {...toDo}
                   onClick={() => onToDoClick(toDo.id)}
                   onRemoveClick={() => onRemoveClick(toDo.id)}
-                  onEditClick={() =>
-                      onEditClick(toDo.id, "HELLO")}
+                  onEditClick={(test) =>
+                      onEditClick(toDo.id, test)}
             />
         )}
     </ul>

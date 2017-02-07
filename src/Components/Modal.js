@@ -1,17 +1,26 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import './Modal.css'
+
 
 class Modal extends React.Component {
     render() {
         if(this.props.isOpen) {
             return (
-                <React.addons.CSSTransitionGroup transitionName={this.props.transitionName}>
+                <ReactCSSTransitionGroup transitionName={this.props.transitionName}
+                                         transitionEnterTimeout={500}
+                                         transitionLeaveTimeout={300}>
                     <div className='modal'>
                         {this.props.children}
                     </div>
-                </React.addons.CSSTransitionGroup>
+                </ReactCSSTransitionGroup>
             )
         } else {
-            return <React.addons.CSSTransitionGroup transitionName={this.props.transitionName} />
+            return <ReactCSSTransitionGroup transitionEnterTimeout={500}
+                                            transitionLeaveTimeout={300}
+                                            transitionName={this.props.transitionName} />
         }
     }
 };
+
+export default Modal;
