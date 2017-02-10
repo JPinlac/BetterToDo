@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import App from './Containers/App';
 import './index.css';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'
-import reducer  from './Reducers/reducer'
+import { Provider } from 'react-redux';
+import reducer  from './Reducers/reducer';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
 const store = createStore(reducer);
 

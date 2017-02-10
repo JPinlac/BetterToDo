@@ -17,3 +17,8 @@ export const editToDo = (id, text) => ({
     id,
     text
 })
+
+export const toggleToDo = (id) => ({
+    type: "TOGGLE_TODO",
+    id
+})

@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addToDo }from '../Actions/actions';
+import './AddToDo.css';
 
 class AddToDo extends React.Component {
     constructor(props) {

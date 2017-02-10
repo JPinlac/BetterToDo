@@ -6,5 +6,5 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5px 0
+    margin: 5px 0;
 }
