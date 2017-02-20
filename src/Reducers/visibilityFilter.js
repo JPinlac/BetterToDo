@@ -1,4 +1,5 @@
 const visibilityFilter = (state = "SHOW_ALL", action) => {
+    console.log(state);
     switch (action.type) {
         case "SHOW_ALL":
             return "SHOW_ALL";

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import AddToDo from '../Containers/AddToDo';
 import VisibleToDoList from '../Containers/VisibleToDoList';
+import FilterLink from '../Containers/FilterLink.js';
 
 class App extends Component {
     render() {
@@ -12,6 +13,7 @@ class App extends Component {
                 </div>
                 <AddToDo />
                 <VisibleToDoList />
+                <FilterLink />
             </div>
         );
     }

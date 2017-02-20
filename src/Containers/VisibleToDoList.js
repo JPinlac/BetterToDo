@@ -7,21 +7,13 @@ const getVisibleToDos = (toDos, filter) => {
         case "SHOW_ALL":
             return toDos;
         case "SHOW_FINISHED":
-            return toDos.map(toDo => {
-                if (toDo.completed === true) {
-                    return {};
-                } else {
-                    return toDo;
-                }
-            });
+            return toDos.filter(toDo => {
+                return toDo.completed
+            })
         case "SHOW_UNFINISHED":
-            return toDos.map(toDo => {
-                if (toDo.completed === false) {
-                    return {};
-                } else {
-                    return toDo;
-                }
-            });
+            return toDos.filter(toDo => {
+                return !toDo.completed
+            })
         default:
             throw new Error('Unknowfilter: ' + filter);
     }

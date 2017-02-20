@@ -2,7 +2,8 @@ import React, { PropTypes } from 'react'
 import ToDo from './ToDo';
 import './ToDoList.css'
 
-const ToDoList = ({ toDos, onToDoClick, onRemoveClick, onEditClick }) => (
+const ToDoList = ({ toDos, onToDoClick, onRemoveClick, onEditClick }) => {
+    return (
     <ul>
         { toDos.map(toDo =>
             <ToDo key={toDo.id}
@@ -14,7 +15,7 @@ const ToDoList = ({ toDos, onToDoClick, onRemoveClick, onEditClick }) => (
             />
         )}
     </ul>
-)
+)}
 
 ToDoList.propTypes = {
     toDos: PropTypes.arrayOf(PropTypes.shape({

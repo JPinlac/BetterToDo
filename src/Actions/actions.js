@@ -22,3 +22,7 @@ export const toggleToDo = (id) => ({
     type: "TOGGLE_TODO",
     id
 })
+
+export const changeVisibilityFilter = (state) => ({
+    type: state,
+})
